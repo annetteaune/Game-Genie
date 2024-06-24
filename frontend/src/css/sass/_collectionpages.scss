@@ -1,0 +1,51 @@
+.page-title{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Bitter", Times, serif;
+    
+}
+.under-title{
+    width: 100%;
+    font-family: "Bitter", Times, serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.list-bckg{
+    background-color: $backgroundcolor;
+    border-radius: 25px;
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+    
+}
+.games-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    .game-card{
+        button{
+            padding: 5.7rem 4.2rem 1.2rem 4.2rem;
+        }
+       
+    }
+    
+   
+}
+
+.mustlogin{
+    text-align: center;
+    font-size: 0.8rem;
+    button{
+        background-color: $cardcolor;
+			color: $fontcolor;
+			border: 2px solid $darkfontcolor;
+			padding: 0.3rem;
+			border-radius: 15px;
+			margin: 0.3rem auto;
+            font-size: 0.8rem;
+    }
+}

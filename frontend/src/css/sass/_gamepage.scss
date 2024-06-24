@@ -1,0 +1,94 @@
+.game-page {
+	margin: 0 auto;
+	width: 100%;
+	.game-page-title {
+		margin-top: 2rem;
+		font-size: 1.2rem;
+		font-family: "Bitter", Times, serif;
+		text-align: center;
+		padding-bottom: 0.8rem;
+	}
+	.fav-button-area {
+		margin: 1rem auto;
+		.heart-btn {
+			background-color: rgba(0, 0, 0, 0);
+			border: none;
+			width: 100%;
+
+			img {
+				width: 96px;
+			}
+		}
+		.fav-msg {
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+			font-size: 0.75rem;
+		}
+	}
+
+	.info-area {
+		padding: 1rem 1rem 1rem 3rem;
+
+		h2 {
+			font-weight: bold;
+			font-size: 0.8rem;
+			span {
+				font-weight: normal;
+				font-size: 0.7rem;
+			}
+		}
+	}
+
+	.img-area {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		img {
+			max-width: 70%;
+			margin: 0 auto;
+			border: 2px solid $cardhovercolor;
+		}
+	}
+	.platform-area {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-evenly;
+		div{
+			h3{
+				font-size: 0.8rem;
+			}
+		}
+		p {
+			font-weight: bold;
+			font-size: 0.8rem;
+		}
+		span,
+		a {
+			padding-top: 0.5rem;
+			display: flex;
+			color: $darkfontcolor;
+			font-size: 0.7rem;
+			
+		}
+	}
+	.plot-area {
+		margin: 1rem;
+		font-size: 0.7rem;
+		line-height: 1rem;
+		p{
+			padding-bottom: 0.3rem;
+		}
+	}
+}
+
+.wordcloud {
+	max-height: 16rem;
+	background-color: $cardcolor;
+	border-radius: 25px;
+	margin-bottom: 1rem;
+	text-align: center;
+	span{
+		font-family: Urbanist, Arial, Helvetica, sans-serif;
+	}
+}

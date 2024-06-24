@@ -1,0 +1,73 @@
+.profile-page {
+	margin: 1rem auto;
+	padding: 1rem;
+	h2 {
+		text-align: center;
+		font-size: 0.9rem;
+	}
+	span {
+		text-align: center;
+		display: block;
+		font-size: 0.8rem;
+	}
+	//kilde for sirkulære bilder:
+	//https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image
+	.image-wrapper {
+		width: 250px;
+		height: 250px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		border: 10px $cardhovercolor dashed;
+		img {
+			display: inline;
+			margin: 0 auto;
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+.login-page {
+	margin: 1rem auto;
+	padding: 3rem;
+	font-size: 0.9rem;
+	p {
+		text-align: center;
+		font-size: 0.8rem;
+		a {
+			color: $darkfontcolor;
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		label {
+			width: 100%;
+			text-align: center;
+		}
+		input {
+			width: 100%;
+			border-radius: 15px;
+			border: 2px solid $darkfontcolor;
+			text-align: center;
+			font-size: 0.8rem;
+		}
+	}
+}
+.login-btn {
+	background-color: $cardcolor;
+	color: $fontcolor;
+	border: 2px solid $darkfontcolor;
+	padding: 0.3rem;
+	border-radius: 15px;
+	margin: 0.3rem auto;
+	display: flex;
+	font-size: 0.8rem;
+	&:hover {
+		color: $darkfontcolor;
+		background-color: $cardhovercolor;
+		text-decoration: underline;
+	}
+}

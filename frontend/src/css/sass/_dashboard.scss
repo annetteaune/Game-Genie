@@ -1,0 +1,81 @@
+.fa-chevron-right {
+	font-size: 0.5rem;
+	padding: 0 0.1rem;
+	color: $fontcolor;
+}
+
+main {
+	max-width: 479px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	.shop,
+	.my-games {
+		margin-top: 1rem;
+		grid-area: main;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	.favourites {
+		grid-area: aside;
+		padding-bottom: 2rem;
+		margin-top: 1rem;
+		flex-direction: column;
+		min-width: 9rem;
+		div {
+			flex-direction: column;
+			h2 {
+				width: 100%;
+
+				img {
+					width: 1rem;
+				}
+			}
+			a {
+				justify-content: center;
+			}
+			width: 100%;
+		}
+		.login-msg {
+			padding: 0.1rem 0.5rem;
+			width: 100%;
+			display: block;
+			font-size: 0.8rem;
+			text-align: center;
+		}
+	}
+	.header-title {
+		width: 100%;
+		padding: 0 0.1rem;
+		display: flex;
+		align-items: baseline;
+
+		h2 {
+			width: 100%;
+			color: $darkfontcolor;
+			font-size: 1.2rem;
+			font-family: "Bitter", Times, serif;
+			text-align: center;
+		}
+		a {
+			display: flex;
+			width: 100%;
+			color: $darkfontcolor;
+			text-decoration: none;
+			justify-content: flex-end;
+			align-items: baseline;
+			font-size: 0.8rem;
+			&:hover {
+				text-decoration: underline;
+			}
+			&:focus {
+				outline: 2px solid $darkfontcolor;
+				border-radius: 15px;
+			}
+		}
+	}
+}

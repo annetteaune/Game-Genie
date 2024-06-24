@@ -1,0 +1,916 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Urbanist:wght@400;600&display=swap");
+.game-card {
+  width: 70%;
+  height: 8rem;
+  background-color: #fffaed;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 2px solid #fffaed;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
+  overflow: visible;
+  color: #161514;
+}
+.game-card:hover,
+.game-card :focus {
+  background-color: #f4a127;
+  border: 2px solid #f4a127;
+  color: #f4a127;
+}
+.game-card:hover .card-title,
+.game-card :focus .card-title {
+  font-size: 1px;
+  color: #f4a127;
+  padding-top: 0;
+}
+.game-card:hover .card-view,
+.game-card :focus .card-view {
+  font-size: 1rem;
+  color: #161514;
+  padding-top: 0.3rem;
+}
+.game-card a:focus {
+  outline: 2px solid #161514;
+  border-radius: 15px;
+}
+.game-card a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #161514;
+}
+.game-card a img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.game-card a .card-title {
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+.game-card a .card-view {
+  font-size: 1px;
+  color: #fffaed;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.game-card a .card-genre {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  overflow: clip;
+  color: #161514;
+}
+.game-card a .card-genre span {
+  font-size: 0.4rem;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.favourites a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.favourites a .fave-card {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem auto;
+  border-radius: 15px;
+  background-color: #fffaed;
+  width: 85%;
+  border: 2px solid #fffaed;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
+}
+.favourites a .fave-card:hover,
+.favourites a .fave-card :focus {
+  background-color: #f4a127;
+  border: 2px solid #f4a127;
+  color: #f4a127;
+}
+.favourites a .fave-card a:focus {
+  outline: 2px solid #161514;
+  border-radius: 15px;
+}
+.favourites a .fave-card img {
+  max-width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.favourites a .fave-card h3 {
+  width: 80%;
+  color: #161514;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.favourites a .fave-card h3:hover {
+  color: #161514;
+  transition: ease-in-out 0.2s;
+  text-decoration: underline;
+}
+.favourites a .fave-card .fa-chevron-right {
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+
+.fa-chevron-right {
+  font-size: 0.5rem;
+  padding: 0 0.1rem;
+  color: #161514;
+}
+
+main {
+  max-width: 479px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main .shop,
+main .my-games {
+  margin-top: 1rem;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+main .favourites {
+  grid-area: aside;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  flex-direction: column;
+  min-width: 9rem;
+}
+main .favourites div {
+  flex-direction: column;
+  width: 100%;
+}
+main .favourites div h2 {
+  width: 100%;
+}
+main .favourites div h2 img {
+  width: 1rem;
+}
+main .favourites div a {
+  justify-content: center;
+}
+main .favourites .login-msg {
+  padding: 0.1rem 0.5rem;
+  width: 100%;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+}
+main .header-title {
+  width: 100%;
+  padding: 0 0.1rem;
+  display: flex;
+  align-items: baseline;
+}
+main .header-title h2 {
+  width: 100%;
+  color: #161514;
+  font-size: 1.2rem;
+  font-family: "Bitter", Times, serif;
+  text-align: center;
+}
+main .header-title a {
+  display: flex;
+  width: 100%;
+  color: #161514;
+  text-decoration: none;
+  justify-content: flex-end;
+  align-items: baseline;
+  font-size: 0.8rem;
+}
+main .header-title a:hover {
+  text-decoration: underline;
+}
+main .header-title a:focus {
+  outline: 2px solid #161514;
+  border-radius: 15px;
+}
+
+header {
+  background-color: #f4a127;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  align-items: center;
+}
+header .navbar .logo a {
+  display: block;
+  max-width: 5rem;
+  min-width: 2rem;
+}
+header .navbar .logo a img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .navbar #search-form {
+  display: flex;
+  gap: 0.2rem;
+}
+header .navbar #search-form input {
+  text-align: center;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 15px;
+  color: #161514;
+  background-color: #fff5da;
+}
+header .navbar #search-form button {
+  border: 2px solid #fffaed;
+  border-radius: 15px;
+  background-color: #fff5da;
+  font-size: 0.8rem;
+  color: #161514;
+}
+header .navbar #search-form button:hover {
+  background-color: #f4a127;
+}
+header .navbar .nav-icon {
+  border: none;
+  background-color: inherit;
+  font-size: 1.2rem;
+}
+header .navbar .nav-links {
+  position: absolute;
+  background-color: #fffaed;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
+  top: 3.54rem;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+}
+header .navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+header .navbar .nav-links ul li a {
+  color: #161514;
+  text-decoration: none;
+}
+header .navbar .nav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-not-active {
+  display: none;
+}
+
+.breadcrumb-active {
+  color: #161514;
+  font-size: 0.7rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  z-index: 99;
+  padding: 1rem;
+  background-color: white;
+  color: #161514;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 5px solid #d77526;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4980392157);
+}
+.skip:focus {
+  left: 2rem;
+  transition: ease-in-out 0.2s;
+}
+
+footer {
+  background-color: #f4a127;
+  text-align: center;
+  color: #161514;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer a {
+  color: #161514;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.game-page {
+  margin: 0 auto;
+  width: 100%;
+}
+.game-page .game-page-title {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-family: "Bitter", Times, serif;
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+.game-page .fav-button-area {
+  margin: 1rem auto;
+}
+.game-page .fav-button-area .heart-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+}
+.game-page .fav-button-area .heart-btn img {
+  width: 96px;
+}
+.game-page .fav-button-area .fav-msg {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 0.75rem;
+}
+.game-page .info-area {
+  padding: 1rem 1rem 1rem 3rem;
+}
+.game-page .info-area h2 {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.game-page .info-area h2 span {
+  font-weight: normal;
+  font-size: 0.7rem;
+}
+.game-page .img-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.game-page .img-area img {
+  max-width: 70%;
+  margin: 0 auto;
+  border: 2px solid #f4a127;
+}
+.game-page .platform-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.game-page .platform-area div h3 {
+  font-size: 0.8rem;
+}
+.game-page .platform-area p {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.game-page .platform-area span,
+.game-page .platform-area a {
+  padding-top: 0.5rem;
+  display: flex;
+  color: #161514;
+  font-size: 0.7rem;
+}
+.game-page .plot-area {
+  margin: 1rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+.game-page .plot-area p {
+  padding-bottom: 0.3rem;
+}
+
+.wordcloud {
+  max-height: 16rem;
+  background-color: #fffaed;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wordcloud span {
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
+}
+
+.page-title {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Bitter", Times, serif;
+}
+
+.under-title {
+  width: 100%;
+  font-family: "Bitter", Times, serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.list-bckg {
+  background-color: #fff5da;
+  border-radius: 25px;
+  padding: 1rem;
+  max-width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+.games-list .game-card button {
+  padding: 5.7rem 4.2rem 1.2rem 4.2rem;
+}
+
+.mustlogin {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.mustlogin button {
+  background-color: #fffaed;
+  color: #161514;
+  border: 2px solid #161514;
+  padding: 0.3rem;
+  border-radius: 15px;
+  margin: 0.3rem auto;
+  font-size: 0.8rem;
+}
+
+.profile-page {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.profile-page h2 {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.profile-page span {
+  text-align: center;
+  display: block;
+  font-size: 0.8rem;
+}
+.profile-page .image-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px #f4a127 dashed;
+}
+.profile-page .image-wrapper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.login-page {
+  margin: 1rem auto;
+  padding: 3rem;
+  font-size: 0.9rem;
+}
+.login-page p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.login-page p a {
+  color: #161514;
+}
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-page form label {
+  width: 100%;
+  text-align: center;
+}
+.login-page form input {
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid #161514;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.login-btn {
+  background-color: #fffaed;
+  color: #161514;
+  border: 2px solid #161514;
+  padding: 0.3rem;
+  border-radius: 15px;
+  margin: 0.3rem auto;
+  display: flex;
+  font-size: 0.8rem;
+}
+.login-btn:hover {
+  color: #161514;
+  background-color: #f4a127;
+  text-decoration: underline;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  main {
+    max-width: 600px;
+    min-height: 400px;
+  }
+  .navbar .search-dropdown {
+    top: 3.5rem;
+    left: 25%;
+  }
+  .navbar .search-dropdown .search-results {
+    width: 70%;
+  }
+  .game-card {
+    width: 70%;
+  }
+  .game-card a h3 {
+    font-size: 0.8rem;
+  }
+  .favourites .header-title h2 {
+    text-align: left;
+  }
+  .favourites .header-title a {
+    justify-content: left;
+  }
+  .favourites a .fave-card {
+    width: 100%;
+  }
+  .favourites a .fave-card img {
+    max-width: 40%;
+    mask-image: linear-gradient(90deg, black, transparent);
+  }
+  .favourites a .fave-card h3 {
+    font-size: 0.55rem;
+  }
+  .favourites a .fave-card .fa-chevron-right {
+    font-size: 0.6rem;
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .games-list {
+    flex-direction: row;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  header .navbar {
+    align-items: center;
+    padding: 0.7rem 1rem;
+  }
+  header .navbar .logo a {
+    max-width: 3rem;
+  }
+  header .navbar .nav-icon {
+    display: none;
+  }
+  header .navbar #search-form input {
+    font-size: 0.7rem;
+  }
+  header .navbar #search-form button {
+    font-size: 0.7rem;
+  }
+  header .navbar .search-dropdown {
+    top: 2.7rem;
+    left: 2rem;
+  }
+  header .navbar .search-dropdown .search-results {
+    width: 40%;
+  }
+  header .navbar .nav-links {
+    display: block;
+    position: inherit;
+    box-shadow: none;
+    background-color: #f4a127;
+    width: 55%;
+  }
+  header .navbar .nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+  }
+  header .navbar .nav-links ul li {
+    font-size: 0.75rem;
+  }
+  header .navbar .nav-links ul li a {
+    color: #161514;
+    text-decoration: none;
+  }
+  header .navbar .nav-links ul li a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 1000px;
+    min-height: 600px;
+  }
+  main .shop {
+    flex-direction: row;
+  }
+  main .my-games {
+    flex-direction: row;
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .game-card {
+    width: 30%;
+  }
+  .game-card a .card-title {
+    font-size: 0.7rem;
+  }
+  .game-card a .card-genre span {
+    font-size: 0.4rem;
+  }
+  .favourites {
+    width: 30%;
+  }
+  .favourites .header-title a {
+    justify-content: left;
+  }
+  .favourites a .fave-card {
+    width: 100%;
+  }
+  .favourites a .fave-card img {
+    max-width: 40%;
+    mask-image: linear-gradient(90deg, black, transparent);
+  }
+  .favourites a .fave-card h3 {
+    font-size: 0.6rem;
+  }
+  .favourites a .fave-card .fa-chevron-right {
+    font-size: 0.6rem;
+  }
+  .games-list {
+    flex-direction: row;
+  }
+  .header-title h2 {
+    text-align: left !important;
+  }
+  .header-title a {
+    text-align: left !important;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+  .game-page .info-area {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .game-page .info-area p {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+  .game-page .info-area p span {
+    font-weight: normal;
+  }
+  .game-page .img-area {
+    flex-direction: row;
+  }
+  .game-page .img-area img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1201px) {
+  header .navbar {
+    padding: 0.3rem 1rem;
+    align-items: center;
+  }
+  header .navbar .logo a {
+    max-width: 3.2rem;
+  }
+  header .navbar .search-dropdown {
+    top: 1.97rem;
+    left: 3rem;
+  }
+  header .navbar .search-results {
+    width: 40%;
+  }
+  header .navbar .nav-icon {
+    display: none;
+  }
+  header .navbar .nav-links {
+    display: block;
+    position: inherit;
+    box-shadow: none;
+    background-color: #f4a127;
+    width: 50%;
+  }
+  header .navbar .nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+  }
+  header .navbar .nav-links ul li {
+    font-size: 0.9rem;
+  }
+  header .navbar .nav-links ul li a {
+    color: #161514;
+    text-decoration: none;
+  }
+  header .navbar .nav-links ul li a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 40rem;
+    min-height: 700px;
+  }
+  main .shop {
+    flex-direction: row;
+  }
+  main .my-games {
+    flex-direction: row;
+  }
+  .favourites .header-title a {
+    justify-content: left;
+  }
+  .favourites a .fave-card {
+    width: 100%;
+  }
+  .favourites a .fave-card img {
+    max-width: 40%;
+    mask-image: linear-gradient(90deg, black, transparent);
+  }
+  .favourites a .fave-card h3 {
+    font-size: 0.6rem;
+  }
+  .favourites a .fave-card .fa-chevron-right {
+    font-size: 0.6rem;
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .game-card {
+    width: 30%;
+  }
+  .game-card a .card-title {
+    font-size: 0.7rem;
+  }
+  .game-card a .card-genre span {
+    font-size: 0.4rem;
+  }
+  .games-list {
+    flex-direction: row;
+  }
+  .header-title h2 {
+    text-align: left !important;
+  }
+  .header-title a {
+    text-align: left !important;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+  .game-page .info-area {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .game-page .info-area p {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+  .game-page .info-area p span {
+    font-weight: normal;
+  }
+  .game-page .img-area {
+    flex-direction: row;
+  }
+  .game-page .img-area img {
+    max-width: 50%;
+  }
+  .game-page .platform-area {
+    display: flex;
+  }
+  .game-page .platform-area p {
+    font-weight: bold;
+    width: 100%;
+  }
+  .game-page .platform-area span,
+  .game-page .platform-area a {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+}
+.search-dropdown {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  z-index: 100;
+}
+.search-dropdown .search-results {
+  background-color: #f4a127;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0px 10px 7px 4px rgba(0, 0, 0, 0.21);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.search-dropdown .search-results .fa-angles-up {
+  padding-top: 1rem;
+}
+.search-dropdown .search-results .fa-angles-up:hover {
+  color: white;
+}
+.search-dropdown .search-results a {
+  text-decoration: none;
+}
+.search-dropdown .search-results a .search-card {
+  width: 100%;
+  max-height: 2rem;
+  background-color: #fffaed;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
+  color: #161514;
+  overflow: clip;
+}
+.search-dropdown .search-results a .search-card:hover {
+  background-color: #ffefc0;
+  text-decoration: underline;
+}
+.search-dropdown .search-results a .search-card img {
+  max-width: 20%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+.search-dropdown .search-results a .search-card h3 {
+  color: #161514;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.search-dropdown .search-results a .search-card .fa-chevron-right {
+  padding-right: 0.2rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+body {
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
+  background: linear-gradient(45deg, #ffefc0 10%, #ffefc0 20%, #553a2a 20%, #553a2a 30%, #d77526 30%, #d77526 40%, #76c7ad 40%, #76c7ad 50%, #ffefc0 50%, #ffefc0 100%);
+  color: #161514;
+}
+
+/*# sourceMappingURL=main.css.map */

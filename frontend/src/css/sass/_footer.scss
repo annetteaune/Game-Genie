@@ -1,0 +1,17 @@
+footer {
+    background-color: $footercolor;
+    text-align: center;
+    color: $darkfontcolor;
+   padding: 2rem 0 1rem 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        color: $darkfontcolor;
+        text-decoration: none;
+        font-size: 0.8rem;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
