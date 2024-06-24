@@ -12,5 +12,8 @@ Backend in Sanity, token is hidden and will need replacing should you run this c
 To run:
 
 cd frontend
+
 npm install
+
 npm run start
+
