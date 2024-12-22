@@ -13,6 +13,7 @@
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
   overflow: visible;
   color: #161514;
+  transition: all 0.3s ease-in-out;
 }
 .game-card:hover,
 .game-card :focus {
@@ -53,14 +54,16 @@
   font-size: 0.9rem;
   text-align: center;
   padding-top: 0.2rem;
+  transition: all 0.3s ease-in-out;
 }
 .game-card a .card-view {
-  font-size: 1px;
+  font-size: 10px;
   color: #fffaed;
   display: block;
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 .game-card a .card-genre {
   display: flex;
@@ -203,7 +206,7 @@ main .header-title a:focus {
 }
 
 header {
-  background-color: #f4a127;
+  background-color: rgba(244, 162, 39, 0.3098039216);
 }
 header .navbar {
   display: flex;
@@ -250,13 +253,13 @@ header .navbar .nav-icon {
 }
 header .navbar .nav-links {
   position: absolute;
-  background-color: #fffaed;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2705882353);
   top: 3.54rem;
   right: 0;
   height: 100%;
   width: 50%;
   z-index: 98;
+  background-color: #f4a127;
 }
 header .navbar .nav-links ul {
   list-style: none;
@@ -308,7 +311,7 @@ header .navbar .nav-links ul li a:hover {
 }
 
 footer {
-  background-color: #f4a127;
+  background-color: rgba(244, 162, 39, 0.3098039216);
   text-align: center;
   color: #161514;
   padding: 2rem 0 1rem 0;
@@ -611,7 +614,7 @@ footer a:hover {
     display: block;
     position: inherit;
     box-shadow: none;
-    background-color: #f4a127;
+    background-color: transparent;
     width: 55%;
   }
   header .navbar .nav-links ul {
@@ -627,13 +630,14 @@ footer a:hover {
   }
   header .navbar .nav-links ul li a {
     color: #161514;
+    font-size: 0.65rem;
     text-decoration: none;
   }
   header .navbar .nav-links ul li a:hover {
     text-decoration: underline;
   }
   main {
-    max-width: 1000px;
+    max-width: 80%;
     min-height: 600px;
   }
   main .shop {
@@ -649,13 +653,16 @@ footer a:hover {
     width: 30%;
   }
   .game-card a .card-title {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .game-card a .card-genre span {
     font-size: 0.4rem;
   }
   .favourites {
     width: 30%;
+  }
+  .favourites .header-title h2 {
+    font-size: 0.8rem;
   }
   .favourites .header-title a {
     justify-content: left;
@@ -678,6 +685,7 @@ footer a:hover {
   }
   .header-title h2 {
     text-align: left !important;
+    font-size: 0.8rem !important;
   }
   .header-title a {
     text-align: left !important;
@@ -722,7 +730,7 @@ footer a:hover {
     left: 3rem;
   }
   header .navbar .search-results {
-    width: 40%;
+    width: 45%;
   }
   header .navbar .nav-icon {
     display: none;
@@ -731,8 +739,7 @@ footer a:hover {
     display: block;
     position: inherit;
     box-shadow: none;
-    background-color: #f4a127;
-    width: 50%;
+    background-color: transparent;
   }
   header .navbar .nav-links ul {
     list-style: none;
@@ -743,7 +750,7 @@ footer a:hover {
     padding: 0;
   }
   header .navbar .nav-links ul li {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
   }
   header .navbar .nav-links ul li a {
     color: #161514;
@@ -795,6 +802,7 @@ footer a:hover {
   }
   .header-title h2 {
     text-align: left !important;
+    font-size: 0.8rem !important;
   }
   .header-title a {
     text-align: left !important;

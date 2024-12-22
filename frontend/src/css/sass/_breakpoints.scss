@@ -1,363 +1,366 @@
 //tablet
 @media (min-width: 480px) and (max-width: 768px) {
-	main {
-		max-width: 600px;
-		min-height: 400px;
-	}
-	.navbar {
-		.search-dropdown {
-			top: 3.5rem;
-			left: 25%;
-			.search-results {
-				width: 70%;
-			}
-		}
-	}
-	.game-card {
-		width: 70%;
-		a {
-			h3 {
-				font-size: 0.8rem;
-			}
-		}
-	}
-	.favourites {
-		.header-title {
-			h2 {
-				text-align: left;
-			}
-			a {
-				justify-content: left;
-			}
-		}
-		a {
-			.fave-card {
-				width: 100%;
-				img {
-					max-width: 40%;
-					mask-image: linear-gradient(90deg, black, transparent);
-				}
-				h3 {
-					font-size: 0.55rem;
-				}
-				.fa-chevron-right {
-					font-size: 0.6rem;
-				}
-			}
-		}
-	}
-	.list-bckg {
-		max-width: 100%;
-	}
-	.games-list {
-		flex-direction: row;
-	}
+  main {
+    max-width: 600px;
+    min-height: 400px;
+  }
+  .navbar {
+    .search-dropdown {
+      top: 3.5rem;
+      left: 25%;
+      .search-results {
+        width: 70%;
+      }
+    }
+  }
+  .game-card {
+    width: 70%;
+    a {
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .favourites {
+    .header-title {
+      h2 {
+        text-align: left;
+      }
+      a {
+        justify-content: left;
+      }
+    }
+    a {
+      .fave-card {
+        width: 100%;
+        img {
+          max-width: 40%;
+          mask-image: linear-gradient(90deg, black, transparent);
+        }
+        h3 {
+          font-size: 0.55rem;
+        }
+        .fa-chevron-right {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .games-list {
+    flex-direction: row;
+  }
 
-	.grid-container {
-		display: grid;
-		grid-template-areas: "main aside";
-		grid-template-columns: 3fr 1fr;
-		gap: 1rem;
-	}
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
 }
 //laptop
 @media (min-width: 769px) and (max-width: 1200px) {
-	header {
-		.navbar {
-			align-items: center;
-			padding: 0.7rem 1rem;
-			.logo {
-				a {
-					max-width: 3rem;
-				}
-			}
-			.nav-icon {
-				display: none;
-			}
-			#search-form {
-				input {
-					font-size: 0.7rem;
-				}
-				button {
-					font-size: 0.7rem;
-				}
-			}
-			.search-dropdown {
-				top: 2.7rem;
-				left: 2rem;
-				.search-results {
-					width: 40%;
-				}
-			}
+  header {
+    .navbar {
+      align-items: center;
+      padding: 0.7rem 1rem;
+      .logo {
+        a {
+          max-width: 3rem;
+        }
+      }
+      .nav-icon {
+        display: none;
+      }
+      #search-form {
+        input {
+          font-size: 0.7rem;
+        }
+        button {
+          font-size: 0.7rem;
+        }
+      }
+      .search-dropdown {
+        top: 2.7rem;
+        left: 2rem;
+        .search-results {
+          width: 40%;
+        }
+      }
 
-			.nav-links {
-				display: block;
-				position: inherit;
-				box-shadow: none;
-				background-color: $footercolor;
-				width: 55%;
+      .nav-links {
+        display: block;
+        position: inherit;
+        box-shadow: none;
+        background-color: transparent;
+        width: 55%;
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: row;
+          gap: 1rem;
+          padding: 0;
+          li {
+            font-size: 0.75rem;
+            a {
+              color: $darkfontcolor;
+              font-size: 0.65rem;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    max-width: 80%;
+    min-height: 600px;
+    .shop {
+      flex-direction: row;
+    }
+    .my-games {
+      flex-direction: row;
+    }
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .game-card {
+    width: 30%;
+    a {
+      .card-title {
+        font-size: 0.6rem;
+      }
+      .card-genre {
+        span {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+  .favourites {
+    width: 30%;
+    .header-title {
+      h2 {
+        font-size: 0.8rem;
+      }
+      a {
+        justify-content: left;
+      }
+    }
+    a {
+      .fave-card {
+        width: 100%;
+        img {
+          max-width: 40%;
+          mask-image: linear-gradient(90deg, black, transparent);
+        }
+        h3 {
+          font-size: 0.6rem;
+        }
+        .fa-chevron-right {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
 
-				ul {
-					list-style: none;
-					display: flex;
-					justify-content: space-evenly;
-					flex-direction: row;
-					gap: 1rem;
-					padding: 0;
-					li {
-						font-size: 0.75rem;
-						a {
-							color: $darkfontcolor;
-							text-decoration: none;
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	main {
-		max-width: 1000px;
-		min-height: 600px;
-		.shop {
-			flex-direction: row;
-		}
-		.my-games {
-			flex-direction: row;
-		}
-	}
-	.list-bckg {
-		max-width: 100%;
-	}
-	.game-card {
-		width: 30%;
-		a {
-			.card-title {
-				font-size: 0.7rem;
-			}
-			.card-genre {
-				span {
-					font-size: 0.4rem;
-				}
-			}
-		}
-	}
-	.favourites {
-		width: 30%;
-		.header-title {
-			a {
-				justify-content: left;
-			}
-		}
-		a {
-			.fave-card {
-				width: 100%;
-				img {
-					max-width: 40%;
-					mask-image: linear-gradient(90deg, black, transparent);
-				}
-				h3 {
-					font-size: 0.6rem;
-				}
-				.fa-chevron-right {
-					font-size: 0.6rem;
-				}
-			}
-		}
-	}
+  .games-list {
+    flex-direction: row;
+  }
+  .header-title {
+    h2 {
+      text-align: left !important;
+      font-size: 0.8rem !important;
+    }
+    a {
+      text-align: left !important;
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+  .game-page {
+    .info-area {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+      padding: 1rem;
+      p {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
 
-	.games-list {
-		flex-direction: row;
-	}
-	.header-title {
-		h2 {
-			text-align: left !important;
-		}
-		a {
-			text-align: left !important;
-		}
-	}
-	.grid-container {
-		display: grid;
-		grid-template-areas: "main aside";
-		grid-template-columns: 3fr 1fr;
-		gap: 1rem;
-	}
-	.game-page {
-		.info-area {
-			display: flex;
-			justify-content: space-evenly;
-			gap: 1rem;
-			padding: 1rem;
-			p {
-				font-weight: bold;
-				display: flex;
-				flex-direction: column;
-
-				span {
-					font-weight: normal;
-				}
-			}
-		}
-		.img-area {
-			flex-direction: row;
-			img {
-				max-width: 50%;
-			}
-		}
-	}
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+    .img-area {
+      flex-direction: row;
+      img {
+        max-width: 50%;
+      }
+    }
+  }
 }
 //xl
 @media (min-width: 1201px) {
-	header {
-		.navbar {
-			padding: 0.3rem 1rem;
-			align-items: center;
-			.logo {
-				a {
-					max-width: 3.2rem;
-				}
-			}
-			.search-dropdown {
-				top: 1.97rem;
-				left: 3rem;
-			}
-			.search-results {
-				width: 40%;
-			}
-			.nav-icon {
-				display: none;
-			}
-			.nav-links {
-				display: block;
-				position: inherit;
-				box-shadow: none;
-				background-color: $footercolor;
-				width: 50%;
+  header {
+    .navbar {
+      padding: 0.3rem 1rem;
+      align-items: center;
+      .logo {
+        a {
+          max-width: 3.2rem;
+        }
+      }
+      .search-dropdown {
+        top: 1.97rem;
+        left: 3rem;
+      }
+      .search-results {
+        width: 45%;
+      }
+      .nav-icon {
+        display: none;
+      }
+      .nav-links {
+        display: block;
+        position: inherit;
+        box-shadow: none;
+        background-color: transparent;
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: row;
+          gap: 1rem;
+          padding: 0;
+          li {
+            font-size: 0.65rem;
+            a {
+              color: $darkfontcolor;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    max-width: 40rem;
+    min-height: 700px;
+    .shop {
+      flex-direction: row;
+    }
+    .my-games {
+      flex-direction: row;
+    }
+  }
+  .favourites {
+    .header-title {
+      a {
+        justify-content: left;
+      }
+    }
+    a {
+      .fave-card {
+        width: 100%;
+        img {
+          max-width: 40%;
+          mask-image: linear-gradient(90deg, black, transparent);
+        }
+        h3 {
+          font-size: 0.6rem;
+        }
+        .fa-chevron-right {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .list-bckg {
+    max-width: 100%;
+  }
+  .game-card {
+    width: 30%;
+    a {
+      .card-title {
+        font-size: 0.7rem;
+      }
+      .card-genre {
+        span {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
 
-				ul {
-					list-style: none;
-					display: flex;
-					justify-content: space-evenly;
-					flex-direction: row;
-					gap: 1rem;
-					padding: 0;
-					li {
-						font-size: 0.9rem;
-						a {
-							color: $darkfontcolor;
-							text-decoration: none;
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	main {
-		max-width: 40rem;
-		min-height: 700px;
-		.shop {
-			flex-direction: row;
-		}
-		.my-games {
-			flex-direction: row;
-		}
-	}
-	.favourites {
-		.header-title {
-			a {
-				justify-content: left;
-			}
-		}
-		a {
-			.fave-card {
-				width: 100%;
-				img {
-					max-width: 40%;
-					mask-image: linear-gradient(90deg, black, transparent);
-				}
-				h3 {
-					font-size: 0.6rem;
-				}
-				.fa-chevron-right {
-					font-size: 0.6rem;
-				}
-			}
-		}
-	}
-	.list-bckg {
-		max-width: 100%;
-	}
-	.game-card {
-		width: 30%;
-		a {
-			.card-title {
-				font-size: 0.7rem;
-			}
-			.card-genre {
-				span {
-					font-size: 0.4rem;
-				}
-			}
-		}
-	}
+  .games-list {
+    flex-direction: row;
+  }
+  .header-title {
+    h2 {
+      text-align: left !important;
+      font-size: 0.8rem !important;
+    }
+    a {
+      text-align: left !important;
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+  .game-page {
+    .info-area {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+      p {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
 
-	.games-list {
-		flex-direction: row;
-	}
-	.header-title {
-		h2 {
-			text-align: left !important;
-		}
-		a {
-			text-align: left !important;
-		}
-	}
-	.grid-container {
-		display: grid;
-		grid-template-areas: "main aside";
-		grid-template-columns: 3fr 1fr;
-		gap: 1rem;
-	}
-	.game-page {
-		.info-area {
-			padding: 1rem;
-			display: flex;
-			justify-content: space-evenly;
-			gap: 1rem;
-			p {
-				font-weight: bold;
-				display: flex;
-				flex-direction: column;
-
-				span {
-					font-weight: normal;
-				}
-			}
-		}
-		.img-area {
-			flex-direction: row;
-			img {
-				max-width: 50%;
-			}
-		}
-		.platform-area {
-			display: flex;
-			p {
-				font-weight: bold;
-				width: 100%;
-			}
-			span,
-			a {
-				width: 100%;
-				flex-direction: column;
-				display: flex;
-			}
-		}
-	}
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+    .img-area {
+      flex-direction: row;
+      img {
+        max-width: 50%;
+      }
+    }
+    .platform-area {
+      display: flex;
+      p {
+        font-weight: bold;
+        width: 100%;
+      }
+      span,
+      a {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+      }
+    }
+  }
 }

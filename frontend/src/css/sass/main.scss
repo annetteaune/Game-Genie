@@ -12,28 +12,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Urbanist:wght@400;600&display=swap");
 
 * {
-	margin: 0;
-	box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-	font-size: calc(1em + 1vw);
+  font-size: calc(1em + 1vw);
 }
 
 body {
-	font-family: Urbanist, Arial, Helvetica, sans-serif;
-	background: linear-gradient(
-		45deg,
-		$bk-light 10%,
-		$bk-light 20%,
-		$bk-brown 20%,
-		$bk-brown 30%,
-		$bk-orange 30%,
-		$bk-orange 40%,
-		$bk-turq 40%,
-		$bk-turq 50%,
-		$bk-light 50%,
-		$bk-light 100%
-	);
-	color: $darkfontcolor;
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    45deg,
+    $bk-light 10%,
+    $bk-light 20%,
+    $bk-brown 20%,
+    $bk-brown 30%,
+    $bk-orange 30%,
+    $bk-orange 40%,
+    $bk-turq 40%,
+    $bk-turq 50%,
+    $bk-light 50%,
+    $bk-light 100%
+  );
+  color: $darkfontcolor;
 }
-
